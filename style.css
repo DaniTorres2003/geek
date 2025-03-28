@@ -1,0 +1,209 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Estilos principais do conteúdo */
+main .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Posts */
+.blog-posts {
+    width: 70%;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  padding-left: 5px;
+}
+
+.bg1 {
+  height: 250px;
+  background-image: url(./images/pexels-cottonbro-8944957.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg2 {
+  height: 250px;
+  background-image: url(./images/pexels-cottonbro-5082566.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg3 {
+  height: 250px;
+  background-image: url(./images/pexels-introspectivedsgn-6654177.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg4 {
+  height: 250px;
+  background-image: url(./images/pexels-jeshoots-com-147458-442576.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg5 {
+  height: 250px;
+  background-image: url(./images/pexels-pixabay-147413.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg6 {
+  height: 250px;
+  background-image: url(./images/pexels-luis-gomes-166706-546819.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg7 {
+  height: 250px;
+  background-image: url(./images/tim-mossholder-tq8Cuap8_wY-unsplash.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg8 {
+  height: 250px;
+  background-image: url(./images/pexels-pixabay-159711.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.bg9 {
+  height: 250px;
+  background-image: url(./images/pexels-jeffreyreed-769724.jpg);
+  background-size: cover;
+  border-radius: 16px;
+}
+/* Sidebar */
+aside {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+aside p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main .container {
+        flex-direction: column;
+    }
+
+    .blog-posts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .post h2 {
+        font-size: 1.5rem;
+    }
+
+    .post .date {
+        font-size: 0.8rem;
+    }
+}
